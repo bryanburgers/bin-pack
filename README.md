@@ -1,5 +1,7 @@
 # Bin Pack
 
+[![Build Status](https://travis-ci.org/bryanburgers/bin-pack.png?branch=master)](https://travis-ci.org/bryanburgers/bin-pack)
+
 A packing algorithm for 2D bin packing. Largely based on [code][code] and a
 [blog post][post] by Jake Gordon.
 
