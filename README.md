@@ -11,11 +11,6 @@ packed.
 The algorithm may not find the *optimal* bin packing, but it should do pretty
 will for things like sprite maps.
 
-## Contributing
-
-Contributing tests, documentation, or code is all appreciated. All code should
-be accompanied by valid tests.
-
 ## Installation
 
 ```
@@ -64,6 +59,11 @@ var result = pack(bins, { inPlace: true });
 // bins[0].x: x coordinate of the packed box
 // bins[0].y: y coordinate of the packed box
 ```
+
+## Contributing
+
+Contributing tests, documentation, or code is all appreciated. All code should
+be accompanied by valid tests.
 
 [code]: https://github.com/jakesgordon/bin-packing
 [post]: http://codeincomplete.com/posts/2011/5/7/bin_packing/
