@@ -1,6 +1,6 @@
 {
   "name": "bin-pack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A packing algorithm for 2D bin packing. Largely based on code and a blog post by Jake Gordon.",
   "author": {
     "name": "Bryan Burgers",
@@ -16,12 +16,15 @@
     "pack"
   ],
   "license": "MIT",
+  "homepage": "https://github.com/bryanburgers/bin-pack",
+  "bugs": {
+    "url": "https://github.com/bryanburgers/bin-pack/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "bryanburgers/bin-pack"
+    "url": "git@github.com:bryanburgers/bin-pack.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "~1.12.1"
   },
