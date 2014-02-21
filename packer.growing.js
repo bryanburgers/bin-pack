@@ -92,8 +92,8 @@ GrowingPacker.prototype = {
 
 	splitNode: function(node, width, height) {
 		node.used = true;
-		node.down  = { x: node.x,         y: node.y + height, width: node.width,         h: node.height - height };
-		node.right = { x: node.x + width, y: node.y,          width: node.width - width, h: height               };
+		node.down  = { x: node.x,         y: node.y + height, width: node.width,         height: node.height - height };
+		node.right = { x: node.x + width, y: node.y,          width: node.width - width, height: height               };
 		return node;
 	},
 
