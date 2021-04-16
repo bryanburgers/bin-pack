@@ -24,7 +24,9 @@
     "type": "git",
     "url": "git@github.com:bryanburgers/bin-pack.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
   "devDependencies": {
     "mocha": "~1.12.1"
   },
