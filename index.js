@@ -48,17 +48,21 @@ module.exports = function (items, options) {
             return fit([], options)
         }
 
-        let rotatedItems = lodash.cloneDeep(newItems)
-        let tmp = rotatedItems[length - 1].height
-        rotatedItems[length - 1].height = rotatedItems[length - 1].width
-        rotatedItems[length - 1].width = tmp
-        rotatedItems[length - 1].rotated = true
+        let index = length - 1
+        let r1 = rotatableFit(newItems, index)
+        if (newItems[index].width !== newItems[index].height) {
+            let rotatedItems = lodash.cloneDeep(newItems)
+            let tmp = rotatedItems[index].height
+            rotatedItems[index].height = rotatedItems[index].width
+            rotatedItems[index].width = tmp
+            rotatedItems[index].rotated = true
+            let r2 = rotatableFit(rotatedItems, index)
 
-        let r1 = rotatableFit(newItems, length - 1)
-        let r2 = rotatableFit(rotatedItems, length - 1)
-
-        if (r1.width * r1.height > r2.width * r2.height) {
-            return r2
+            if (r1.width * r1.height > r2.width * r2.height) {
+                return r2
+            } else {
+                return r1
+            }
         } else {
             return r1
         }
